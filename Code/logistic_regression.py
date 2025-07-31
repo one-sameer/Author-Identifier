@@ -14,7 +14,7 @@ from nltk.stem.porter import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 #importing the dataset
 
-path1 = '/media/harshika/Work/Projects/Author-Identifier/datasets/C50train/'
+path1 = '/media/Dell/Work/Projects/Author-Identifier/datasets/C50train/'
 authors = os.listdir(path1)[:50]
 
 y_train = []
@@ -40,7 +40,7 @@ for auth in authors:
         X_train = np.append(X_train,cleaned)
         #X_train = ' '.join(X_train)
         f.close()
-path2 = '/media/harshika/Work/Projects/Author-Identifier/datasets/C50test/'
+path2 = '/media/Dell/Work/Projects/Author-Identifier/datasets/C50test/'
 authors = os.listdir(path2)[:50]
 for auth in authors:  
 
